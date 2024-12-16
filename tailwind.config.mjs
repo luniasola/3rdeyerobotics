@@ -6,11 +6,19 @@ export default {
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}'
 	],
 
+	darkMode: 'selector',
+
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: [ 'var(--font-ibm-plex-sans)' ],
+			},
+
 			colors: {
-				primary   : 'var(--primary)',
-				secondary : 'var(--secondary)',
+				primary : {
+                    DEFAULT    : 'var(--primary)',
+                    foreground : 'var(--primary-foreground)',
+                },
 
 				background : 'var(--background)',
 				foreground : 'var(--foreground)'

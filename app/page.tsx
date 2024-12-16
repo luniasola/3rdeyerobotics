@@ -1,7 +1,17 @@
+'use client'
+
+import { useEffect } from 'react'
+
+import Hero         from '@/app/components/hero'
+import { Main }     from '@/components/canggu/block'
+import { viewport } from '@/components/utility'
+
 export default function Home() {
+    useEffect(() => { viewport() })
+
     return (
-        <main>
-            <h1>3rd Eye Robotics</h1>
-        </main>
+        <Main>
+            <Hero />
+        </Main>
     )
 }

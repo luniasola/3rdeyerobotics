@@ -9,8 +9,11 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@radix-ui/react-slot": "latest",
+		"lucide-react": "latest",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
+		"motion": "latest",
 		"next": "^15"
 	},
 	"devDependencies": {
@@ -19,8 +22,11 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"class-variance-authority": "latest",
+		"clsx": "latest",
 		"postcss": "^8",
 		"tailwindcss": "latest",
+		"tailwind-merge": "latest",
 		"typescript": "^5",
 		"typescript-eslint": "latest",
 		"eslint": "^9",

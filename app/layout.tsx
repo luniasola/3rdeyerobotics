@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
-import { Geist }         from 'next/font/google'
+import { IBM_Plex_Sans } from 'next/font/google'
 
 import '@/app/assets/style/tailwind.css'
 
-const fontGeist = Geist({ variable : '--font-geist-sans', subsets : [ 'latin' ] })
+import Navigation     from '@/app/components/navigation'
+import { HTML, Body } from '@/components/canggu/block'
+
+const fontIBMPlexSans = IBM_Plex_Sans({ variable : '--font-ibm-plex-sans', weight : [ '300', '400', '500', '600' ], subsets : [ 'latin' ] })
 
 export const metadata: Metadata = {
     title  	    : '3rd Eye Robotics',
@@ -12,10 +15,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{children : React.ReactNode }>) {
     return (
-        <html lang={'en'}>
-            <body className={fontGeist.variable + 'antialiased'}>
+        <HTML lang={'en'}>
+            <Body className={fontIBMPlexSans.variable}>
+                <Navigation />
                 {children}
-            </body>
-        </html>
+            </Body>
+        </HTML>
     )
 }
