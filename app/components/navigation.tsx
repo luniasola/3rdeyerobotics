@@ -26,7 +26,7 @@ export default function Navigation() {
                         {[ 'Home', 'About', 'Industries', 'Dealers', 'Careers', 'Contact' ].map((item, index) => (
                             <motion.li animate={'visible'} custom={index} exit={'hidden'} initial={'hidden'} key={item} variants={animationList}>
                                 <a href={'#'}>
-                                    <Paragraph className={'font-normal'}>{item}</Paragraph>
+                                    <Paragraph className={'font-normal text-white'}>{item}</Paragraph>
                                 </a>
                             </motion.li>
                         ))}

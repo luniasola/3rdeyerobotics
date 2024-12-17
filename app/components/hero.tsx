@@ -19,8 +19,8 @@ export default function Hero() {
             <Div className={'relative z-20 mx-auto flex h-screen max-w-screen-2xl items-center justify-between p-4 align-middle md:p-6 2xl:p-0'}>
                 <Div className={'flex flex-col gap-4 md:gap-8'}>
                     <motion.div animate={{ opacity : 1,  y : 0 }} className={'mt-[29.000rem] flex flex-col gap-2 md:mt-0'} initial={{ opacity : 0, y : 20 }} transition={{ type : 'spring', stiffness : 50, damping : 30, duration : 0.5, delay : 0.5 }}>
-                        <Heading4 className={'text-base font-normal text-white md:text-xl'}>AI at Work: Where Vision Meets Safety</Heading4>
-                        <Heading1 className={'text-[3.600rem] font-medium leading-tight text-white antialiased md:text-8xl lg:text-[6.500rem]'}>
+                        <Heading4 className={'text-xl font-normal text-white'}>AI at Work: Where Vision Meets Safety</Heading4>
+                        <Heading1 className={'text-[3.750rem] font-medium leading-tight text-white antialiased md:text-8xl lg:text-[6.500rem]'}>
                             Saving Lives, <br />
                             Reducing Risks.
                         </Heading1>
@@ -51,7 +51,7 @@ export default function Hero() {
                     </motion.div>
 
                     <motion.div animate={{ opacity : 1, y : 0 }} className={'absolute bottom-10 mt-auto flex md:bottom-20'} initial={{ opacity : 0, y : -20 }} transition={{ type : 'spring', stiffness : 50, damping : 30, duration : 0.5, delay : 0.5 }}>
-                        <Heading4 className={'text-sm font-normal text-white md:text-base'}>OmniVai®:  Your Safety. Our Mission.</Heading4>
+                        <Heading4 className={'text-xl font-normal text-white'}>OmniVai®:  Your Safety. Our Mission.</Heading4>
                     </motion.div>
                 </Div>                
             </Div>
