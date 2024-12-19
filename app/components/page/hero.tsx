@@ -9,11 +9,11 @@ import { Heading1, Heading4 } from '@/components/canggu/text'
 
 export default function Hero() {
     return (
-        <Header className={'h-screen w-full bg-clip-content'}>
+        <Header className={'h-screen w-full'}>
             <motion.div animate={{ opacity : 1,  y : 0, height : 0 }} initial={{ opacity : 0, y : -20, height : 0 }} transition={{ type : 'spring', stiffness : 50, damping : 30, duration : 0.5, delay : 0.5 }}>
-                <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 hidden h-screen w-full text-clip object-cover object-right-bottom lg:block lg:object-bottom'} height={1000} src={'/assets/static/hero/homepage/main.png'} width={1000} priority />
-                <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 hidden h-screen w-full text-clip object-cover object-left-bottom md:block lg:hidden'} height={1000} src={'/assets/static/hero/homepage/medium.png'} width={1000} priority />
-                <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 h-screen w-full text-clip object-cover object-center md:hidden lg:hidden'} height={1000} src={'/assets/static/hero/homepage/small.png'} width={1000} priority />
+                <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 hidden h-screen w-full text-clip object-cover object-right-bottom lg:block lg:object-bottom'} height={1000} src={'/assets/static/page/homepage/hero/main.png'} width={1000} priority />
+                <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 hidden h-screen w-full text-clip object-cover object-left-bottom md:block lg:hidden'} height={1000} src={'/assets/static/page/homepage/hero/medium.png'} width={1000} priority />
+                <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 h-screen w-full text-clip object-cover object-center md:hidden lg:hidden'} height={1000} src={'/assets/static/page/homepage/hero/small.png'} width={1000} priority />
             </motion.div>
 
             <Div className={'relative z-20 mx-auto flex h-screen max-w-screen-2xl items-center justify-between p-4 align-middle md:p-6 2xl:p-0'}>

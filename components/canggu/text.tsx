@@ -9,8 +9,8 @@ export const Heading4: React.FC<React.HTMLProps<HTMLHeadingElement>> = ({ classN
 export const Heading5: React.FC<React.HTMLProps<HTMLHeadingElement>> = ({ className, ...props }) => <h5 className={classNames('scroll-m-20 font-sans text-lg leading-normal tracking-normal text-black dark:text-white', className)} {...props} />
 export const Heading6: React.FC<React.HTMLProps<HTMLHeadingElement>> = ({ className, ...props }) => <h6 className={classNames('scroll-m-20 font-sans text-base leading-normal tracking-normal text-black dark:text-white', className)} {...props} />
 
-export const Paragraph: React.FC<React.HTMLProps<HTMLParagraphElement>> = ({ className, ...props }) => <p className={classNames('scroll-m-20 font-sans text-sm font-normal leading-normal tracking-normal text-black dark:text-white', className)} {...props} />
-export const Small: React.FC<React.HTMLProps<HTMLElement>>              = ({ className, ...props }) => <small className={classNames('scroll-m-20 font-sans text-xs font-normal leading-normal tracking-normal text-black dark:text-white', className)} {...props} />
+export const Paragraph: React.FC<React.HTMLProps<HTMLParagraphElement>> = ({ className, ...props }) => <p className={classNames('scroll-m-20 font-sans text-base font-normal leading-normal tracking-normal text-black dark:text-white', className)} {...props} />
+export const Small: React.FC<React.HTMLProps<HTMLElement>>              = ({ className, ...props }) => <small className={classNames('scroll-m-20 font-sans text-sm font-normal leading-normal tracking-normal text-black dark:text-white', className)} {...props} />
 
 Heading1.displayName  = 'Heading1'
 Heading2.displayName  = 'Heading2'

@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@radix-ui/react-separator": "latest",
 		"@radix-ui/react-slot": "latest",
 		"lucide-react": "latest",
 		"react": "^19.0.0",
