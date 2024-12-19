@@ -3,13 +3,13 @@ import Image from 'next/image'
 import { ArrowRight, Play } from 'lucide-react'
 import { motion }           from 'motion/react'
 
-import { Section, Div, Span } from '@/components/canggu/block'
+import { Header, Div, Span }  from '@/components/canggu/block'
 import { Button }             from '@/components/canggu/button'
 import { Heading1, Heading4 } from '@/components/canggu/text'
 
 export default function Hero() {
     return (
-        <Section className={'h-screen w-full bg-clip-content'}>
+        <Header className={'h-screen w-full bg-clip-content'}>
             <motion.div animate={{ opacity : 1,  y : 0, height : 0 }} initial={{ opacity : 0, y : -20, height : 0 }} transition={{ type : 'spring', stiffness : 50, damping : 30, duration : 0.5, delay : 0.5 }}>
                 <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 hidden h-screen w-full text-clip object-cover object-right-bottom lg:block lg:object-bottom'} height={1000} src={'/assets/static/hero/homepage/main.png'} width={1000} priority />
                 <Image alt={'3rd Eye Robotics AI Visualization'} className={'absolute left-0 z-10 hidden h-screen w-full text-clip object-cover object-left-bottom md:block lg:hidden'} height={1000} src={'/assets/static/hero/homepage/medium.png'} width={1000} priority />
@@ -55,6 +55,6 @@ export default function Hero() {
                     </motion.div>
                 </Div>                
             </Div>
-        </Section>
+        </Header>
     )
 }
