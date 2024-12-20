@@ -1,9 +1,11 @@
 import { ArrowRight } from 'lucide-react'
 
-import Container               from '@/app/components/global/container'
-import { Section, Div, Span }  from '@/components/canggu/block'
-import { Button }              from '@/components/canggu/button'
-import { Heading1, Paragraph } from '@/components/canggu/text'
+import Container                  from '@/app/components/global/container'
+import Demo                       from '@/app/components/global/demo'
+import { Section, Div, Span }     from '@/components/canggu/block'
+import { Button }                 from '@/components/canggu/button'
+import {  Dialog, DialogTrigger } from '@/components/canggu/dialog'
+import { Heading1, Paragraph }    from '@/components/canggu/text'
 
 export default function Action() {
     return (
@@ -16,10 +18,16 @@ export default function Action() {
                         <Paragraph className={'text-lg leading-relaxed text-white'}>At 3rd Eye Robotics, we’re driven by a mission to save lives and redefine safety in construction.</Paragraph>
                     </Div>
 
-                    <Button appearance={'white'} className={'group cursor-pointer'} size={'2xl'}>
-                        <ArrowRight className={'-ml-5 mr-5 -rotate-45 transition-transform duration-300 group-hover:rotate-0'} />
-                        <Span>Request Demo</Span>
-                    </Button>
+                    <Dialog>
+                        <DialogTrigger asChild>
+                            <Button appearance={'white'} className={'group cursor-pointer'} size={'2xl'}>
+                                <ArrowRight className={'-ml-5 mr-5 -rotate-45 transition-transform duration-300 group-hover:rotate-0'} />
+                                <Span>Request Demo</Span>
+                            </Button>
+                        </DialogTrigger>
+
+                        <Demo />
+                    </Dialog>
                 </Div>
             </Container>
         </Section>

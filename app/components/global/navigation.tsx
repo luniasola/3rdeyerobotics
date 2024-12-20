@@ -8,11 +8,13 @@ import { useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { motion }     from 'motion/react'
 
-import Container      from '@/app/components/global/container'
-import { Nav, Div }   from '@/components/canggu/block'
-import { Button }     from '@/components/canggu/button'
-import { Paragraph }  from '@/components/canggu/text'
-import { classNames } from '@/components/utility'
+import Container                 from '@/app/components/global/container'
+import Demo                      from '@/app/components/global/demo'
+import { Nav, Div }              from '@/components/canggu/block'
+import { Button }                from '@/components/canggu/button'
+import { Dialog, DialogTrigger } from '@/components/canggu/dialog'
+import { Paragraph }             from '@/components/canggu/text'
+import { classNames }            from '@/components/utility'
 
 const menu = [
     {
@@ -81,10 +83,16 @@ export default function GlobalNavigation() {
                 </Div>
 
                 <motion.div animate={{ opacity : 1, y : 0 }} initial={{ opacity : 0, y : -10 }} transition={{ duration : 0.5, delay : 1.15 }}>
-                    <Button appearance={'primary'} className={'group'} size={'xl'}>
-                        <ArrowRight className={'-ml-1.5 mr-3.5 -rotate-45 transition-transform duration-300 group-hover:rotate-0'} />
-                        Request Demo
-                    </Button>
+                    <Dialog>
+                        <DialogTrigger asChild>
+                            <Button appearance={'primary'} className={'group'} size={'xl'}>
+                                <ArrowRight className={'-ml-1.5 mr-3.5 -rotate-45 transition-transform duration-300 group-hover:rotate-0'} />
+                                Request Demo
+                            </Button>
+                        </DialogTrigger>
+
+                        <Demo />
+                    </Dialog>
                 </motion.div>
             </Container>
         </Nav>
