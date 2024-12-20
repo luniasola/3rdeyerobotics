@@ -7,9 +7,9 @@ import { Heading, Chip }       from '@/app/components/global/element'
 import { Section, Div }        from '@/components/canggu/block'
 import { Heading5, Paragraph } from '@/components/canggu/text'
 
-export default function Industry() {
+export default function Dealer() {
     return (
-        <Section className={'bg-black-200 py-10'} id={'dealers'}>
+        <Section className={'bg-black-500 py-10'} id={'dealer'}>
             <Container className={'flex-col'}>
                 <Div className={'relative grid items-start gap-4 md:grid-cols-2'}>
                     <Chip appearance={'white'} className={''} text={'Dealers'} />

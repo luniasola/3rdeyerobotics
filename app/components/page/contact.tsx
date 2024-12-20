@@ -7,9 +7,9 @@ import { Button }                       from '@/components/canggu/button'
 import { Form, Input, Label, Textarea } from '@/components/canggu/form'
 import { Heading3, Paragraph }          from '@/components/canggu/text'
 
-export default function Industry() {
+export default function Contact() {
     return (
-        <Section className={'bg-[url(/assets/static/global/pattern/line/black.svg)] bg-cover py-10'} id={'contact'}>
+        <Section className={'scroll-m-24 bg-[url(/assets/static/global/pattern/line/black.svg)] bg-cover py-10'} id={'contact'}>
             <Container className={'flex-col'}>
                 <Div className={'relative grid items-start gap-4 md:grid-cols-2'}>
                     <Chip appearance={'white'} className={''} text={'Contact Us'} />

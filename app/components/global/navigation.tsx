@@ -21,7 +21,7 @@ const menu = [
     },
     {
         label : 'Industries',
-        href  : '#sector',
+        href  : '#industry',
     },
     {
         label : 'Safety Innovation',
@@ -29,15 +29,15 @@ const menu = [
     },
     {
         label : 'Dealers',
-        href  : '#',
+        href  : '#dealer',
     },
     {
         label : 'Contact',
-        href  : '#',
+        href  : '#contact',
     },
 ]
 
-export default function Navigation() {
+export default function GlobalNavigation() {
     const [ active, setActive ] = useState(false)
 
     const animationList = { hidden : { opacity : 0, y : -10 }, visible : (index: number) => ({ opacity : 1, y : 0, transition : { delay : index * .2, duration : 0.3, type : 'spring', stiffness : 50, damping : 30 } })}

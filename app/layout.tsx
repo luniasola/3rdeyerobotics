@@ -3,6 +3,7 @@ import { IBM_Plex_Sans } from 'next/font/google'
 
 import '@/app/assets/style/tailwind.css'
 
+import Footer         from '@/app/components/global/footer'
 import Navigation     from '@/app/components/global/navigation'
 import { HTML, Body } from '@/components/canggu/block'
 
@@ -18,7 +19,10 @@ export default function RootLayout({ children }: Readonly<{children : React.Reac
         <HTML className={'scroll-smooth'} lang={'en'}>
             <Body className={fontIBMPlexSans.variable}>
                 <Navigation />
+
                 {children}
+
+                <Footer />
             </Body>
         </HTML>
     )
