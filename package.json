@@ -9,8 +9,12 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@radix-ui/react-checkbox": "latest",
+		"@radix-ui/react-label": "latest",
 		"@radix-ui/react-separator": "latest",
+		"@radix-ui/react-select": "latest",
 		"@radix-ui/react-slot": "latest",
+		"@radix-ui/react-switch": "latest",
 		"embla-carousel-react": "latest",
 		"embla-carousel-autoplay": "latest",
 		"lucide-react": "latest",

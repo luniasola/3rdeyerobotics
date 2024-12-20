@@ -8,7 +8,7 @@ import { classNames }         from '@/components/utility'
 export const Heading = ({ text, appearance = 'primary', separator = true, className }: { text : React.ReactNode, appearance? : 'primary' | 'white' | 'gray', separator? : boolean, className? : string }) => {
     return (
         <Div className={classNames('flex flex-col space-y-3')}>
-            <Heading2 className={classNames('font-semibold', appearance === 'white' ? 'text-white' : 'text-black', className)}>{text}</Heading2>
+            <Heading2 className={classNames('font-semibold leading-loose', appearance === 'white' ? 'text-white' : 'text-black', className)}>{text}</Heading2>
             {separator && <Separator className={classNames('h-1.5 w-16', appearance === 'gray' ? 'bg-gray-300' : 'bg-' + appearance)} />}
         </Div>
     )

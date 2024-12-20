@@ -6,8 +6,22 @@
 	--background: #FFFFFF;
 	--foreground: #000000;
 
+	--foundation: 0 0% 100%;
+	--foundation-foreground: 0 0% 0%;
+
 	--primary: #FF6902;
 	--primary-foreground: #FFFFFF;
+
+	--muted: 200 5% 45%;
+	--muted-foreground: 0 0% 0%;
+
+	--component-tooltip: 0 0% 0%;
+	--component-tooltip-foreground: 0 0% 100%;
+
+	--component-popover: 0 0% 100%;
+	--component-popover-foreground: 0 0% 0%;
+
+	--component-input: 215 31.5% 91.5%;
 }
 
 body {

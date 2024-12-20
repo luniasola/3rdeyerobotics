@@ -8,7 +8,7 @@ import { Heading2, Heading3, Paragraph } from '@/components/canggu/text'
 
 export default function About() {
     return (
-        <Section className={'py-10'} id={'feature'}>
+        <Section className={'scroll-m-20 py-10'} id={'about'}>
             <Container className={'flex-col gap-16'}>
                 <Div className={'relative grid grid-cols-2 gap-4 md:grid-cols-2'}>
                     <Div>
@@ -23,7 +23,7 @@ export default function About() {
                 <Separator />
 
                 <Div className={'grid lg:grid-cols-2'}>
-                    <Div className={'flex lg:pr-12'}>
+                    <Div className={'flex lg:mb-12 lg:pr-12'}>
                         <Image alt={'3rd Eye Robotics AI Visualization'} className={'w-full'} height={1000} src={'/assets/static/page/homepage/about/main.png'} width={1000} priority />
                     </Div>
 
