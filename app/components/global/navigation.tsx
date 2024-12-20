@@ -82,7 +82,7 @@ export default function GlobalNavigation() {
                     </ul>
                 </Div>
 
-                <motion.div animate={{ opacity : 1, y : 0 }} initial={{ opacity : 0, y : -10 }} transition={{ duration : 0.5, delay : 1.15 }}>
+                <motion.div animate={{ opacity : 1, y : 0 }} className={'flex flex-row gap-2'} initial={{ opacity : 0, y : -10 }} transition={{ duration : 0.5, delay : 1.15 }}>
                     <Dialog>
                         <DialogTrigger asChild>
                             <Button appearance={'primary'} className={'group'} size={'xl'}>
@@ -93,6 +93,13 @@ export default function GlobalNavigation() {
 
                         <Demo />
                     </Dialog>
+
+                    <Button appearance={'white'} className={'group hidden md:flex'} size={'xl'} asChild>
+                        <Link href={'https://fleet.3rdeyerobotics.com/auth/login'}>
+                            <ArrowRight className={'-ml-1.5 mr-3.5 -rotate-45 transition-transform duration-300 group-hover:rotate-0'} />
+                            Sign In
+                        </Link>
+                    </Button>
                 </motion.div>
             </Container>
         </Nav>
