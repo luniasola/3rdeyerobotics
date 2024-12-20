@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import About        from '@/app/components/page/about'
 import Action       from '@/app/components/page/action'
 import Contact      from '@/app/components/page/contact'
+import Dealer       from '@/app/components/page/dealer'
 import Feature      from '@/app/components/page/feature'
 import Hero         from '@/app/components/page/hero'
 import Industry     from '@/app/components/page/industry'
@@ -24,6 +25,7 @@ export default function Home() {
             <About />
             <Contact />
             <Action />
+            <Dealer />
         </Main>
     )
 }

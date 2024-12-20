@@ -33,22 +33,22 @@ export default function Industry() {
                         <Form className={'flex flex-col gap-6'}>
                             <Div>
                                 <Label className={'text-white'} htmlFor={'name'}>Fullname</Label>
-                                <Input className={'border-0 bg-black text-white'} id={'name'} name={'name'} required={true} type={'text'} />
+                                <Input className={'border-0 bg-black-200 text-white'} id={'name'} name={'name'} required={true} type={'text'} />
                             </Div>
 
                             <Div>
                                 <Label className={'text-white'} htmlFor={'email'}>Email Address</Label>
-                                <Input className={'border-0 bg-black text-white'} id={'email'} name={'email'} required={true} type={'email'} />
+                                <Input className={'border-0 bg-black-200 text-white'} id={'email'} name={'email'} required={true} type={'email'} />
                             </Div>
 
                             <Div>
                                 <Label className={'text-white'} htmlFor={'company'}>Company</Label>
-                                <Input className={'border-0 bg-black text-white'} id={'company'} name={'company'} required={true} type={'email'} />
+                                <Input className={'border-0 bg-black-200 text-white'} id={'company'} name={'company'} required={true} type={'email'} />
                             </Div>
 
                             <Div>
                                 <Label className={'text-white'} htmlFor={'message'}>Message</Label>
-                                <Textarea className={'border-0 bg-black text-white'} id={'message'} name={'message'} required={true} rows={6}></Textarea>
+                                <Textarea className={'border-0 bg-black-200 text-white'} id={'message'} name={'message'} required={true} rows={6}></Textarea>
                             </Div>
 
                             <Div>

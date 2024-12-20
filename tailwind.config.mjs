@@ -40,11 +40,21 @@ export default {
                         DEFAULT    : 'hsl(var(--component-tooltip))',
                         foreground : 'hsl(var(--component-tooltip-foreground))'
                     },
+
                     popover : {
                         DEFAULT    : 'hsl(var(--component-popover))',
                         foreground : 'hsl(var(--component-popover-foreground))'
                     },
+
                     input : 'hsl(var(--component-input))'
+                },
+
+                black : {
+                    DEFAULT    : 'hsl(var(--black))',
+                    foreground : 'hsl(var(--black-foreground))',
+
+                    500 : 'var(--black-500)',
+                    200 : 'var(--black-200)'
                 },
 
 				background : 'var(--background)',

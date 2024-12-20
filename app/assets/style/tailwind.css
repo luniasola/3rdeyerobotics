@@ -22,6 +22,11 @@
 	--component-popover-foreground: 0 0% 0%;
 
 	--component-input: 215 31.5% 91.5%;
+
+	--black: #000000;
+	--black-500: #19191E;
+	--black-200: #141419;
+	--black-foreground: #FFFFFF;
 }
 
 body {

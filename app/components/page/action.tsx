@@ -7,7 +7,7 @@ import { Heading1, Paragraph } from '@/components/canggu/text'
 
 export default function Action() {
     return (
-        <Section className={'bg-[url(/assets/static/global/pattern/line/primary.svg)] bg-cover py-12'} id={'action'}>
+        <Section className={'bg-[url(/assets/static/global/pattern/line/primary.svg)] bg-cover py-32'} id={'action'}>
             <Container className={'flex-col'}>
                 <Div className={'relative flex flex-col items-center gap-6'}>
                     <Div className={'flex flex-col items-center gap-4 text-center'}>
