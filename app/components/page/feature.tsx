@@ -7,7 +7,7 @@ import { Heading5, Paragraph } from '@/components/canggu/text'
 
 export default function Feature() {
     return (
-        <Section className={'bg-[url(/assets/static/global/pattern/line/primary.svg)] py-12'} id={'feature'}>
+        <Section className={'bg-[url(/assets/static/global/pattern/line/white.svg)] py-12'} id={'feature'}>
             <Container className={'flex-col'}>
                 <Div className={'flex w-full flex-row items-start justify-between gap-16'}>
                     <Heading appearance={'primary'} text={'Why OmniVai®?'} />

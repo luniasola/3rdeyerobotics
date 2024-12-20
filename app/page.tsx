@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 
 import About        from '@/app/components/page/about'
+import Action       from '@/app/components/page/action'
 import Contact      from '@/app/components/page/contact'
 import Feature      from '@/app/components/page/feature'
 import Hero         from '@/app/components/page/hero'
@@ -22,6 +23,7 @@ export default function Home() {
             <Industry />
             <About />
             <Contact />
+            <Action />
         </Main>
     )
 }
