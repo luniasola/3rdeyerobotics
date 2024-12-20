@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 
+import About        from '@/app/components/page/about'
 import Feature      from '@/app/components/page/feature'
 import Hero         from '@/app/components/page/hero'
 import Industry     from '@/app/components/page/industry'
@@ -18,6 +19,7 @@ export default function Home() {
             <Feature />
             <Sector />
             <Industry />
+            <About />
         </Main>
     )
 }

@@ -20,7 +20,7 @@ const industries = [
 
 export default function Industry() {
     return (
-        <Section className={'bg-[url(/assets/static/global/pattern/line/gray.svg)] bg-cover py-16'} id={'feature'}>
+        <Section className={'bg-[url(/assets/static/global/pattern/line/gray.svg)] bg-cover py-10'} id={'feature'}>
             <Container className={'flex-col'}>
                 <Div className={'relative grid items-start gap-4 md:grid-cols-2'}>
                     <Heading appearance={'primary'} text={'Industries'} />
