@@ -12,6 +12,7 @@
 		"@radix-ui/react-separator": "latest",
 		"@radix-ui/react-slot": "latest",
 		"embla-carousel-react": "latest",
+		"embla-carousel-autoplay": "latest",
 		"lucide-react": "latest",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",

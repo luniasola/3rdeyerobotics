@@ -10,7 +10,7 @@ export const ButtonVariant = cva('inline-flex items-center justify-center gap-2 
         appearance : {
             primary : 'hover:bg-primary/90 active:bg-primary/75 bg-primary text-white hover:ring-orange-500/50 focus-visible:ring focus-visible:ring-orange-500/50 active:ring-0',
             white   : 'hover:bg-primary/90 bg-white text-primary hover:ring-white/50 focus-visible:ring focus-visible:ring-white/50 active:bg-white/75 active:ring-0',
-            outline : 'border-[1.5px] bg-transparent hover:text-black hover:ring-gray-200/65 focus-visible:ring focus-visible:ring-gray-200/65 active:bg-gray-200 active:ring-0 dark:border-gray-100/25 dark:text-white dark:hover:bg-gray-100/15 dark:hover:text-white dark:hover:ring-gray-100/15 dark:focus-visible:ring-gray-100/15 dark:active:bg-gray-100/25',
+            outline : 'border-[1.5px] border-primary bg-transparent hover:text-black hover:ring-gray-200/65 focus-visible:ring focus-visible:ring-gray-200/65 active:bg-gray-200 active:ring-0 dark:border-gray-100/25 dark:text-white dark:hover:bg-gray-100/15 dark:hover:text-white dark:hover:ring-gray-100/15 dark:focus-visible:ring-gray-100/15 dark:active:bg-gray-100/25',
             ghost   : 'bg-transparent hover:bg-gray-200/65 hover:text-black hover:ring-gray-200/65 focus-visible:bg-gray-200/65 focus-visible:ring focus-visible:ring-gray-200/65 active:bg-gray-200 dark:text-white dark:hover:bg-gray-100/15 dark:hover:text-white dark:hover:ring-gray-100/15 dark:focus-visible:bg-gray-100/15 dark:focus-visible:ring-gray-100/15 dark:active:bg-gray-100/25',
         },
         size : {

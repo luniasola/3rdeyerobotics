@@ -116,8 +116,8 @@ export const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.Compon
     const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
     return (
-        <Button appearance={appearance} className={classNames('absolute size-8 rounded-full', orientation === 'horizontal' ? '-left-12 top-1/2 -translate-y-1/2' : '-top-12 left-1/2 -translate-x-1/2 rotate-90', className)} disabled={!canScrollPrev} icon={icon} ref={ref} onClick={scrollPrev} {...props}>
-            <ArrowLeft className={'size-4'} />
+        <Button appearance={appearance} className={classNames('size-12', orientation === 'horizontal' ? '-left-12 top-1/2 -translate-y-1/2' : '-top-12 left-1/2 -translate-x-1/2 rotate-90', className)} disabled={!canScrollPrev} icon={icon} ref={ref} shape={'circle'} onClick={scrollPrev} {...props}>
+            <ArrowLeft className={'size-4 stroke-primary'} />
             <Span className={'sr-only'}>Previous Slide</Span>
         </Button>
     )
@@ -127,8 +127,8 @@ export const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentP
     const { orientation, scrollNext, canScrollNext } = useCarousel()
 
     return (
-        <Button appearance={appearance} className={classNames('absolute size-8 rounded-full', orientation === 'horizontal' ? '-right-12 top-1/2 -translate-y-1/2' : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90', className)} disabled={!canScrollNext} icon={icon} ref={ref} onClick={scrollNext} {...props}>
-            <ArrowRight className={'size-4'} />
+        <Button appearance={appearance} className={classNames('size-12 rounded-full', orientation === 'horizontal' ? '-right-12 top-1/2 -translate-y-1/2' : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90', className)} disabled={!canScrollNext} icon={icon} ref={ref} shape={'circle'} onClick={scrollNext} {...props}>
+            <ArrowRight className={'size-4 stroke-primary'} />
             <Span className={'sr-only'}>Next Slide</Span>
         </Button>
     )

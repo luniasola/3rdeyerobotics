@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{children : React.ReactNode }>) {
     return (
-        <HTML lang={'en'}>
+        <HTML className={'scroll-smooth'} lang={'en'}>
             <Body className={fontIBMPlexSans.variable}>
                 <Navigation />
                 {children}

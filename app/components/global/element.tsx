@@ -5,10 +5,10 @@ import { Separator }          from '@/components/canggu/separator'
 import { Heading2, Heading6 } from '@/components/canggu/text'
 import { classNames }         from '@/components/utility'
 
-export const Heading = ({ text, appearance, separator = true, className }: { text : string, appearance? : 'primary' | 'white', separator? : boolean, className? : string }) => {
+export const Heading = ({ text, appearance, separator = true, className }: { text : React.ReactNode, appearance? : 'primary' | 'white', separator? : boolean, className? : string }) => {
     return (
-        <Div className={classNames('flex flex-col space-y-3', className)}>
-            <Heading2 className={classNames('font-semibold', appearance === 'primary' ? 'text-black' : 'text-white')}>{text}</Heading2>
+        <Div className={classNames('flex flex-col space-y-3')}>
+            <Heading2 className={classNames('font-semibold', appearance === 'primary' ? 'text-black' : 'text-white', className)}>{text}</Heading2>
             {separator && <Separator className={classNames('h-1.5 w-16', appearance === 'primary' ? 'bg-primary' : 'bg-white')} />}
         </Div>
     )
