@@ -60,6 +60,15 @@ export default {
 				background : 'var(--background)',
 				foreground : 'var(--foreground)'
 			},
+
+            screens: {
+                'xs'    : '375px',
+                'lg'    : '1100px',
+                'common': '992px',
+
+                'landscapes@xs': { 'raw': `only screen and (max-height: 375px) and (orientation: landscape)` },
+                'landscapes@md': { 'raw': `only screen and (max-height: 600px) and (orientation: landscape)` }
+            },
 		},
 	},
 

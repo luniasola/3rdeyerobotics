@@ -8,10 +8,10 @@ import { Form, Input, Label, Textarea }                                         
 
 export default function Demo() {
     return (
-        <DialogContent className={' md:w-3/5'}>       
+        <DialogContent aria-describedby={''} className={'md:w-3/5'}>       
             <DialogHeader>
                 <DialogTitle>
-                    <Div className={'relative grid items-start gap-4 md:grid-cols-2'}>
+                    <Div className={'relative grid items-start gap-4 md:grid-cols-1 lg:grid-cols-2'}>
                         <Heading appearance={'primary'} className={'text-xl leading-normal'} separator={true} text={'Schedule Demo or Pilot'} />
                     </Div>
                 </DialogTitle>
