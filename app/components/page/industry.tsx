@@ -21,6 +21,26 @@ const industries = [
         title : 'Construction',
         image : '/assets/static/page/homepage/industry/construction.jpg',
     },
+    {
+        title : 'Mining',
+        image : '/assets/static/page/homepage/industry/mining.jpg',
+    },
+    {
+        title : 'Military',
+        image : '/assets/static/page/homepage/industry/military.jpeg',
+    },
+    {
+        title : 'Demolition',
+        image : '/assets/static/page/homepage/industry/demolition.jpg',
+    },
+    {
+        title : 'Rail (MOW)',
+        image : '/assets/static/page/homepage/industry/rail.jpeg',
+    },
+    {
+        title : 'Recycling',
+        image : '/assets/static/page/homepage/industry/recycle.jpg',
+    },
 ]
 
 export default function Industry() {
@@ -39,7 +59,7 @@ export default function Industry() {
                     {
                         industries.map((industry, key) => (
                             <CarouselItem className={'flex flex-col gap-4 md:basis-1/2 lg:basis-1/2'} key={key}>
-                                <Image alt={industry.title} className={'w-full object-cover'} height={1000} src={industry.image} width={1000} />
+                                <Image alt={industry.title} className={'w-full object-cover'} height={1000} src={industry.image} width={1000} priority />
                                 <Heading appearance={'gray'} className={'text-2xl'} text={industry.title} />
                             </CarouselItem>
                         ))

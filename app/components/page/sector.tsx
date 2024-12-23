@@ -12,12 +12,24 @@ import { Heading1, Paragraph }                                                  
 
 const sectors = [
     {
-        image         : '/assets/static/page/homepage/sector/infrastructure-heavy-civil.jpg',
+        image         : '/assets/static/page/homepage/sector/residential.jpg',
+        carouselTitle : 'Residential',
+    },
+    {
+        image         : '/assets/static/page/homepage/sector/infrastructure.jpg',
         carouselTitle : 'Heavy Civil',
     },
     {
         image         : '/assets/static/page/homepage/sector/environmental.jpg',
         carouselTitle : 'Environmental',
+    },
+    {
+        image         : '/assets/static/page/homepage/sector/industrial.jpg',
+        carouselTitle : 'Industrial',
+    },
+    {
+        image         : '/assets/static/page/homepage/sector/commercial.jpg',
+        carouselTitle : 'Commercial',
     },
 ]
 
@@ -57,7 +69,7 @@ export default function Sector() {
                     {
                         sectors.map((sector, key) => (
                             <CarouselItem className={'relative'} key={key}>
-                                <Image alt={sector.carouselTitle} className={'w-full'} height={1000} src={sector.image} width={1000} />
+                                <Image alt={sector.carouselTitle} className={'w-full'} height={1000} src={sector.image} width={1000} priority />
                             </CarouselItem>
                         ))
                     }
