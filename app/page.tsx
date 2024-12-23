@@ -8,6 +8,7 @@ import Contact      from '@/app/components/page/contact'
 import Dealer       from '@/app/components/page/dealer'
 import Feature      from '@/app/components/page/feature'
 import Hero         from '@/app/components/page/hero'
+import Impact       from '@/app/components/page/impact'
 import Industry     from '@/app/components/page/industry'
 import Innovation   from '@/app/components/page/innovation'
 import Sector       from '@/app/components/page/sector'
@@ -22,6 +23,7 @@ export default function Home() {
             <Hero />
             <Feature />
             <Innovation />
+            <Impact />
             <Sector />
             <Industry />
             <About />

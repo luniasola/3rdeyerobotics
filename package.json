@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@radix-ui/react-accordion": "latest",
 		"@radix-ui/react-checkbox": "latest",
 		"@radix-ui/react-dialog": "latest",
 		"@radix-ui/react-label": "latest",
